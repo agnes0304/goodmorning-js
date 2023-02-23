@@ -17,3 +17,8 @@ const calculator = {
     },
 };
 
+calculator.add(100,50);
+calculator.minus(100,50);
+calculator.mul(100,50);
+calculator.div(100,50);
+calculator.power(100,2);
