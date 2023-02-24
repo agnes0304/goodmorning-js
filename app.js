@@ -51,5 +51,18 @@ const title = document.querySelector(".hello h1")
 function handleClick() {
     title.style.color="red";
 }
+function handlemouseenter() {
+    title.innerText = "mouse is here!";
+    title.style.color="blue";
+}
+function handlemouseleave() {
+    title.innerText = "Hello";
+    title.style.color="black";
+}
+
+
+
 
 title.addEventListener("click", handleClick)
+title.addEventListener("mouseenter", handlemouseenter)
+title.addEventListener("mouseleave", handlemouseleave)
