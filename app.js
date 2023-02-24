@@ -49,38 +49,47 @@ const calculator = {
 const title = document.querySelector(".hello h1")
 
 function handleClick() {
-    title.style.color="red";
+    const currentColor = title.style.color;
+    let newColor;
+    if(currentColor === "blue") {
+        newColor = "red";
+    } else {
+        newColor = "blue";
+    }
+    title.style.color = newColor   
 }
-function handlemouseenter() {
-    title.innerText = "mouse is here!";
-}
-function handlemouseleave() {
-    title.innerText = "Hello";
-    title.style.color="black";
-}
+// function handlemouseenter() {
+//     title.innerText = "mouse is here!";
+// }
 
-function handleWindowResize() {
-	document.body.style.backgroundColor = "violet";
-}
+// function handlemouseleave() {
+//     title.innerText = "Hello";
+//     title.style.color="black";
+// }
 
-function handleWindowCopy() {
-	title.style.color = "gray";
-	alert("Copy done.")
-}
+// function handleWindowResize() {
+// 	document.body.style.backgroundColor = "violet";
+// }
 
-function handleWindowOnline() {
-	alert("Online.");
-}
+// function handleWindowCopy() {
+// 	title.style.color = "gray";
+// 	alert("Copy done.")
+// }
 
-function handleWindowOffline() {
-	alert("Offline.");
-}
+// function handleWindowOnline() {
+// 	alert("Online.");
+// }
+
+// function handleWindowOffline() {
+// 	alert("Offline.");
+// }
 
 title.addEventListener("click", handleClick)
-title.addEventListener("mouseenter", handlemouseenter)
-title.addEventListener("mouseleave", handlemouseleave)
+// title.addEventListener("mouseenter", handlemouseenter)
+// title.addEventListener("mouseleave", handlemouseleave)
 
-window.addEventListener("resize", handleWindowResize);
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("online", handleWindowOnline);
-window.addEventListener("offline", handleWindowOffline);
+// window.addEventListener("resize", handleWindowResize);
+// window.addEventListener("copy", handleWindowCopy);
+// window.addEventListener("online", handleWindowOnline);
+// window.addEventListener("offline", handleWindowOffline);
+
