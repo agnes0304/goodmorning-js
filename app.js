@@ -33,14 +33,23 @@ const calculator = {
 // console.log(korAge);
 
 
-const age = parseInt(prompt("How old are you?"));
+// const age = parseInt(prompt("How old are you?"));
 
-if (isNaN(age) || age < 0){
-    console.log("Enter the age plz.");
-} else if (age < 18) {
-    console.log("You are too young.");
-} else if (age >= 18 && age < 70) {
-    console.log("Enjoy your drink!");
-} else if (age >= 70) {
-    console.log("It's okay, but let's exercise!");
+// if (isNaN(age) || age < 0){
+//     console.log("Enter the age plz.");
+// } else if (age < 18) {
+//     console.log("You are too young.");
+// } else if (age >= 18 && age < 70) {
+//     console.log("Enjoy your drink!");
+// } else if (age >= 70) {
+//     console.log("It's okay, but let's exercise!");
+// }
+
+
+const title = document.querySelector(".hello h1")
+
+function handleClick() {
+    console.log("Click!");
 }
+
+title.addEventListener("click", handleClick)
