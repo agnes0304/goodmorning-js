@@ -49,7 +49,7 @@ const calculator = {
 const title = document.querySelector(".hello h1")
 
 function handleClick() {
-    console.log("Click!");
+    title.style.color="red";
 }
 
 title.addEventListener("click", handleClick)
