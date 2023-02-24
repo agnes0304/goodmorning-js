@@ -46,7 +46,7 @@ const calculator = {
 // }
 
 
-const title = document.querySelector(".hello h1")
+// const title = document.querySelector(".hello h1")
 
 function handleClick() {
     const currentColor = title.style.color;
@@ -58,8 +58,12 @@ function handleClick() {
     }
     title.style.color = newColor   
 }
+
+// title.addEventListener("click", handleClick)
+
+
 // function handlemouseenter() {
-//     title.innerText = "mouse is here!";
+    //     title.innerText = "mouse is here!";
 // }
 
 // function handlemouseleave() {
@@ -84,7 +88,7 @@ function handleClick() {
 // 	alert("Offline.");
 // }
 
-title.addEventListener("click", handleClick)
+
 // title.addEventListener("mouseenter", handlemouseenter)
 // title.addEventListener("mouseleave", handlemouseleave)
 
@@ -93,3 +97,28 @@ title.addEventListener("click", handleClick)
 // window.addEventListener("online", handleWindowOnline);
 // window.addEventListener("offline", handleWindowOffline);
 
+
+const h1 = document.querySelector("div h1");
+
+// function handleClick() {
+// 	if (h1.className === "active") {
+// 		h1.className ="";
+// 	} else {
+// 		h1.className = "active";
+// 	}
+// }
+
+// function handleClick() {
+//     const activeClass ="active"
+// 	if (h1.classList.contains(activeClass)) {
+// 		h1.classList.remove(activeClass);
+// 	} else {
+// 		h1.classList.add(activeClass);
+// 	}
+// }
+
+function handleClick() {
+    h1.classList.toggle("active");
+}
+
+h1.addEventListener("click", handleClick)
