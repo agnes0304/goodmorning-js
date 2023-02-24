@@ -53,16 +53,34 @@ function handleClick() {
 }
 function handlemouseenter() {
     title.innerText = "mouse is here!";
-    title.style.color="blue";
 }
 function handlemouseleave() {
     title.innerText = "Hello";
     title.style.color="black";
 }
 
+function handleWindowResize() {
+	document.body.style.backgroundColor = "violet";
+}
 
+function handleWindowCopy() {
+	title.style.color = "gray";
+	alert("Copy done.")
+}
 
+function handleWindowOnline() {
+	alert("Online.");
+}
+
+function handleWindowOffline() {
+	alert("Offline.");
+}
 
 title.addEventListener("click", handleClick)
 title.addEventListener("mouseenter", handlemouseenter)
 title.addEventListener("mouseleave", handlemouseleave)
+
+window.addEventListener("resize", handleWindowResize);
+window.addEventListener("copy", handleWindowCopy);
+window.addEventListener("online", handleWindowOnline);
+window.addEventListener("offline", handleWindowOffline);
